@@ -1,0 +1,39 @@
+.border-foodelight {
+    border-image: linear-gradient(to right, black 0%, #84cc16 100%) 1;
+    border-radius: 5px; /* this doesn't work */
+    border-width: 1px;
+    border-style: solid;
+}
+.border-foodelight:hover {
+    border-image: linear-gradient(to right, #84cc16 0%, black 100%) 1;
+}
+
+.border-shophere {
+    border-image: linear-gradient(to right, #e11d48 0%, #fde047 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-shophere:hover {
+    border-image: linear-gradient(to right, #fde047 0%, #e11d48 100%) 1;
+}
+
+.border-vibechat {
+    border-image: linear-gradient(to right, #9333ea 0%, #38bdf8 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-vibechat:hover {
+    border-image: linear-gradient(to right, #38bdf8 0%, #9333ea 100%) 1;
+}
+
+.border-isfhs {
+    border-image: linear-gradient(to right, #fde047 0%, #e11d48 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-isfhs:hover {
+    border-image: linear-gradient(to right, #e11d48 0%, #fde047 100%) 1;
+}

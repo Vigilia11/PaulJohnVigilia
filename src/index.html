@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/aside.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-white sm:bg-gray-100">
+    <nav class="hidden sm:block h-14 w-full fixed top-0 left-0 z-30 bg-white">
+        <div class="max-w-5xl mx-auto h-full">
+            <div class="w-full h-full flex justify-between items-center">
+                <div class="flex gap-3 items-center">
+                    <h1 class="text-red-600 uppercase lucida font-bold text-xl">PJ</h1>
+                    <h1 class="text-gray-800 tracking-wider">Portfolio</h1>
+                </div>
+                <ul class="flex gap-3 items-center">
+                    <li class="text-sm px-3 py-1 rounded-4xl bg-red-600 text-white">
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="work.html">Work</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <aside class="sm:hidden h-screen w-56 bg-white fixed left-0 top-0  shadow-2xl z-50  transform -translate-x-full sm:translate-x-0 ease-out duration-150" id="sidenav">
+        <div class="w-full h-full relative p-7">
+            <button type="button" onclick="toggelNavigation()" class="absolute -right-6 top-[50%] bg-black/50 h-10 hover:bg-black text-center" id="arrowButton">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>                  
+            </button>
+            <h1 class="text-xl text-red-600 tracking-wide">PJ Portfolio</h1>
+            <ul class="space-y-5 mt-3">
+                <li class="text-black text-sm font-medium tracking-wide">
+                    <a href="index.html" class="hover:underline">Index</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="about.html" class="hover:underline">About</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="project.html" class="hover:underline">Project</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="work.html" class="hover:underline">Work</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="contact.html" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    
+    <div class="w-full min-h-screen flex items-center overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <h1 class=" sm:text-4xl text-center text-gray-800">Hi, I'm <span class="font-semibold lucida text-black">PJ!</span></h1>
+            <h1 class=" text-gray-800 text-center mt-1 tracking-wider">Software Engineer</h1>
+            <div class="sm:w-[650px] sm:h-[150px] flex justify-center items-center my-5 sm:my-1 relative paul-john" id="nameContainer">
+                <h1 class="text-4xl sm:text-[120px] text-black -mt-3 font-semibold">PAUL JOHN</h1>
+                <div class="hidden absolute h-[150px] w-[150px] rounded-4xl backdrop-blur-sm bg-white/50 cube overflow-hidden sm:flex items-center justify-center cursor-pointer" onclick="move()" id="cube">
+                    <div class="w-full h-full relative flex items-center justify-center">
+                        <h1 class="text-center text-sm text-black" id="clickMe">Click me</h1>
+                        <img src="./images/pj.png" class="h-[140px] absolute bottom-0 hidden" id="pictureKo" alt="">
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-sm text-center text-black mb-5 tracking-wide">I design and develop website</h1>
+            <div class="w-fit mx-auto ">
+                <a href="./cv/01-24-25.pdf" download>
+                    <div class="px-4 py-1 sm:px-6 sm:py-2 rounded-4xl w-fit bg-white  text-center text-sm sm:font-medium tracking-wider text-gray-600 sm:text-black button">
+                        Download CV
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js" defer></script>
+    <script src="./js/aside.js"></script>
+</body>
+</html>

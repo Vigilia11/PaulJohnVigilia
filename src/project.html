@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/projects.css">
+  <link rel="stylesheet" href="./css/aside.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-white sm:bg-gray-100">
+    <nav class="hidden sm:block h-14 w-full fixed top-0 left-0 z-30 bg-white">
+        <div class="max-w-5xl mx-auto h-full">
+            <div class="w-full h-full flex justify-between items-center">
+                <div class="flex gap-3 items-center">
+                    <h1 class="text-red-600 uppercase lucida font-bold text-xl">PJ</h1>
+                    <h1 class="text-gray-800 tracking-wider">Portfolio</h1>
+                </div>
+                <ul class="flex gap-3 items-center">
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="text-sm px-3 py-1 rounded-4xl bg-red-600 text-white">
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="work.html">Work</a>
+                    </li>
+                    <li class="text-gray-800 text-sm px-3">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <aside class="sm:hidden h-screen w-56 bg-white fixed left-0 top-0  shadow-2xl z-50  transform -translate-x-full sm:translate-x-0 ease-out duration-150" id="sidenav">
+        <div class="w-full h-full relative p-7">
+            <button type="button" onclick="toggelNavigation()" class="absolute -right-6 top-[50%] bg-black/50 h-10 hover:bg-black text-center" id="arrowButton">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>                  
+            </button>
+            <h1 class="text-xl text-red-600 tracking-wide">PJ Portfolio</h1>
+            <ul class="space-y-5 mt-3">
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="index.html" class="hover:underline">Index</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="about.html" class="hover:underline">About</a>
+                </li>
+                <li class="text-black text-sm font-medium tracking-wide">
+                    <a href="project.html" class="hover:underline">Project</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="work.html" class="hover:underline">Work</a>
+                </li>
+                <li class="text-gray-700 text-sm tracking-wide">
+                    <a href="contact.html" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    
+    <div class="sm:fixed top-0 left-0 w-full sm:h-screen pt-4 sm:pt-14 sm:z-10">
+        <div class="h-full w-full sm:flex items-center justify-center">
+            <div>
+                <h1 class="text-black font-semibold text-4xl sm:text-[130px] tracking-wide text-center sm:leading-32 helvetica">PROJECTS</h1>
+                <h1 class="text-2xl text-black text-center mt-1 edwardian hidden sm:block">Scroll down</h1>
+            </div>
+        </div>
+    </div>
+    <div class="relative w-full min-h-screen z-20 px-2 sm:px-0 py-4 sm:py-0">
+        <div class="w-full sm:h-screen"></div>
+        <!--foodelight-->
+        <div class="w-full sm:py-7 mb-12 sm:mb-0">
+            <div class="w-full">
+                <div class="w-full sm:max-w-5xl relative mx-auto sm:h-[450px] sm:flex items-center">
+                    <div class="w-full sm:w-96 sm:shadow-2xl sm:bg-white sm:p-4 overflow-hidden sm:absolute left-0 sm:z-30">
+                        <div class="w-full h-full relative py-2 sm:hidden">
+                            <h1 class="text-lg"><span class="text-black">FOO</span><span class="text-lime-600">DELIGHT</span></h1>                                                                                                  
+                        </div>
+                        <div class="w-full flex gap-1">
+                            <div class="w-full sm:w-60 h-40 flex-initial">
+                                <a href="./images/projects/foodelight1.png">
+                                    <img src="./images/projects/foodelight1.png" alt="" class="w-full h-full shadow">
+                                </a>
+                            </div>
+                            <div class="hidden flex-1 sm:flex flex-wrap gap-1">
+                                <div class="w-full h-[78px]">
+                                    <a href="./images/projects/foodelight2.png">
+                                        <img src="./images/projects/foodelight2.png" alt="" class="w-full h-full shadow">
+                                    </a>
+                                </div>
+                                <div class="w-full h-[78px]">
+                                    <a href="./images/projects/foodelight3.png">
+                                        <img src="./images/projects/foodelight3.png" alt="" class="w-full h-full shadow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <button type="button" class="hidden sm:block w-full sm:p-2 border-foodelight mt-4 
+                        text-sm font-medium text-black tracking-wide text-center" 
+                        onclick="fullWithToRight(0)" title="click me">
+                            <div class="w-full h-full relative flex justify-center items-center">
+                                <h1><span class="text-black">FOO</span><span class="text-lime-600">DELIGHT</span></h1>                                                                                                  
+                            </div>
+                        </button>
+                    </div>
+        
+                    <div class="w-full h-full overflow-hidden">
+                        <div class="w-full h-full transform sm:-translate-x-full ease-out duration-1000 sm:bg-white/50  sm:backdrop-blur-xl sm:flex justify-end items-center sm:pe-4 project-container">
+                            <div class="w-full sm:w-96 ">
+                                <h1 class="text-black text-2xl font-semibold hidden sm:block">Foodelight</h1>
+                                <h1 class="text-black text-sm sm:mt-3">Foodelight is a food ordering system.</h1>
+                                <h1 class="text-black font-medium mt-3 tracking-wide">Functions</h1>
+                                <ul class="list-disc text-black text-sm space-y-1 ps-5">
+                                    <li>Account login and register</li>
+                                    <li>Registered users can add items into cart</li>
+                                    <li>Registered users can order items</li>
+                                    <li>Rates and Reviews</li>
+                                </ul>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--shophere-->
+        <div class="w-full sm:py-7 mb-12 sm:mb-0">
+            <div class="w-full">
+                <div class="w-full sm:max-w-5xl relative mx-auto sm:h-[450px] sm:flex items-center">
+                    <div class="w-full sm:w-96 sm:shadow-2xl bg-white sm:p-4 overflow-hidden sm:absolute right-0 z-30">
+                        <h1 class="text-lg font-medium tracking-wide text-rose-600 uppercase sm:hidden mpy-2">Shophere</h1>
+                        <div class="w-full sm:flex gap-1">
+                            <div class="w-full sm:w-60 h-40 flex-initial">
+                                <a href="./images/projects/shophere1.png">
+                                    <img src="./images/projects/shophere1.png" alt="" class="w-full h-full shadow">
+                                </a>
+                            </div>
+                            <div class="hidden flex-1 sm:flex flex-wrap gap-1">
+                                <div class="w-full h-[78px]">
+                                    <a href="./images/projects/shophere2.png">
+                                        <img src="./images/projects/shophere2.png" alt="" class="w-full h-full shadow">
+                                    </a>
+                                </div>
+                                <div class="w-full h-[78px]">
+                                    <a href="./images/projects/shophere3.png">
+                                        <img src="./images/projects/shophere3.png" alt="" class="w-full h-full shadow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="hidden sm:block w-full p-2 border-shophere mt-4 
+                        text-sm font-medium tracking-wide text-center text-rose-600 uppercase" 
+                        onclick="fullWithToLeft(1)" title="click me">
+                            Shophere                                
+                        </button>
+                    </div>
+        
+                    <div class="w-full h-full overflow-hidden relative">
+                        <div class="sm:absolute right-0 w-full h-full transform sm:translate-x-full ease-out duration-1000 sm:bg-white/50  sm:backdrop-blur-xl sm:flex justify-start items-center sm:ps-20 project-container">
+                            <div class="s-full sm:w-96">
+                                <h1 class="text-black text-4xl font-semibold hidden sm:block">Shophere</h1>
+                                <h1 class="text-black text-sm mt-3">Shophere is a platform that sells items from its own shop.</h1>
+                                <h1 class="text-black font-medium mt-3 tracking-wide">Functions</h1>
+                                <ul class="list-disc text-black text-sm space-y-1 ps-5">
+                                    <li>Account login and register</li>
+                                    <li>Registered users can add items into cart</li>
+                                    <li>Registered users can order items</li>
+                                    <li>Rates and Reviews</li>
+                                </ul>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--vibechat-->
+        <div class="w-full sm:py-7 mb-12 sm:mb-0">
+            <div class="w-full">
+                <div class="w-full sm:max-w-5xl relative mx-auto sm:h-[450px] sm:flex items-center">
+                    <div class="w-full sm:w-96 sm:shadow-2xl sm:bg-white sm:p-4 overflow-hidden sm:absolute left-0 sm:z-30">
+                        <h1 class="py-2 sm:hidden"><span class="text-sky-500">VIBE</span><span class="text-purple-600">CHAT</span></h1>
+                        <div class="w-full sm:flex gap-1">
+                            <div class="w-full sm:w-60 h-40 flex-initial">
+                                <a href="./images/projects/vibechat1.png">
+                                    <img src="./images/projects/vibechat1.png" alt="" class="w-full h-full shadow">
+                                </a>
+                            </div>
+                            <div class="hidden flex-1 sm:flex flex-wrap gap-1">
+                                <div class="w-full h-[78px]">
+                                    <a href="./images/projects/vibechat2.png">
+                                        <img src="./images/projects/vibechat2.png" alt="" class="w-full h-full shadow">
+                                    </a>
+                                </div>
+                                <div class="w-full h-[78px]">
+                                    <a href="./images/projects/vibechat3.png">
+                                        <img src="./images/projects/vibechat3.png" alt="" class="w-full h-full shadow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="hidden sm:block w-full p-2 border-vibechat mt-4 
+                        text-sm font-medium text-black tracking-wide text-center" 
+                        onclick="fullWithToRight(2)" title="click me">
+                            <div class="w-full h-full relative flex justify-center items-center">
+                                <h1><span class="text-sky-500">VIBE</span><span class="text-purple-600">CHAT</span></h1>
+                            </div>
+                        </button>
+                    </div>
+        
+                    <div class="w-full h-full overflow-hidden">
+                        <div class="w-full h-full transform sm:-translate-x-full ease-out duration-1000 sm:bg-white/50  sm:backdrop-blur-xl sm:flex justify-end items-center sm:pe-4 project-container">
+                            <div class="w-full sm:w-96">
+                                <h1 class="text-black text-4xl font-semibold hidden sm:block">Vibechat</h1>
+                                <h1 class="text-black text-sm mt-3">Vibechat is a free chatting system where you can find and add friends to chat.</h1>
+                                <h1 class="text-black font-medium mt-3 tracking-wide">Functions</h1>
+                                <ul class="list-disc text-black text-sm space-y-1 ps-5">
+                                    <li>Account login and register</li>
+                                    <li>Users can view other users</li>
+                                    <li>Add friends</li>
+                                    <li>Chat with friends</li>
+                                </ul>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--ISFHS-->
+        <div class="w-full sm:py-7 mb-12 sm:mb-0">
+            <div class="w-full">
+                <div class="w-full sm:max-w-5xl relative mx-auto sm:h-[450px] sm:flex items-center">
+                    <h1 class="text-lg font-medium tracking-wide text-rose-600 uppercase sm:hidden py-2">ISFHS</h1>
+                    <div class="w-full sm:w-96 sm:shadow-2xl bg-white sm:p-4 overflow-hidden sm:absolute right-0 sm:z-30">
+                        <div class="w-full h-40">
+                            <a href="./images/projects/isfhs.png">
+                                <img src="./images/projects/isfhs.png" alt="" class="w-full h-full shadow">
+                            </a>
+                        </div>
+                        
+                        <button type="button" class="hidden sm:block w-full p-2 border-isfhs mt-4 
+                        text-sm font-medium tracking-wide text-center text-rose-600 uppercase" 
+                        onclick="fullWithToLeft(3)" title="click me">
+                            ISFHS
+                        </button>
+                    </div>
+        
+                    <div class="w-full h-full overflow-hidden relative">
+                        <div class="sm:absolute right-0 w-full h-full transform sm:translate-x-full ease-out duration-1000 sm:bg-white/50  sm:backdrop-blur-xl sm:flex justify-start items-center sm:ps-20 project-container">
+                            <div class="w-full sm:w-96">
+                                <h1 class="text-black text-4xl font-semibold hidden sm:block">ISFHS</h1>
+                                <h1 class="text-black text-sm mt-3">Information System on Foods and Housing Services(ISFHS) is an information system about Foods and Housing around NEUST Sumacab Campus, Cababatuan Nueva Ecija.</h1>
+                                <h1 class="text-black font-medium mt-3 tracking-wide">Functions</h1>
+                                <ul class="list-disc text-black text-sm space-y-1 ps-5">
+                                    <li>Account login and register</li>
+                                    <li>2 types of user registration. Students and Facilitator</li>
+                                    <li>Rates and Reviews</li>
+                                    <li>Facilitator can create, update and delete its own facility</li>
+                                </ul>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--pos-->
+        <div class="w-full sm:py-7">
+            <div class="w-full">
+                <div class="w-full sm:max-w-5xl relative mx-auto sm:h-[450px] sm:flex items-center">
+                    <div class="w-full sm:w-96 sm:shadow-2xl sm:bg-white sm:p-4 overflow-hidden sm:absolute left-0 sm:z-30">
+                        <h1 class="text-lg sm:hidden font-medium tracking-wide text-green-700 py-2">POS</h1>
+                        <div class="w-full h-40">
+                            <a href="./images/projects/pos.png">
+                                <img src="./images/projects/pos.png" alt="" class="w-full h-full shadow">
+                            </a>
+                        </div>
+                        
+                        <button type="button" class="w-full p-2 border border-green-900 hover:border-green-600 mt-4 
+                        text-sm font-medium tracking-wide text-center text-green-700 hover:text-green-900 hidden sm:block" 
+                        onclick="fullWithToRight(4)" title="click me">
+                            POS                                
+                        </button>
+                    </div>
+        
+                    <div class="w-full h-full overflow-hidden">
+                        <div class="w-full h-full transform sm:-translate-x-full ease-out duration-1000 sm:bg-white/50  sm:backdrop-blur-xl sm:flex justify-end items-center sm:pe-4 project-container">
+                            <div class="w-full sm:w-96">
+                                <h1 class="text-black text-4xl font-semibold hidden sm:block">POS</h1>
+                                <h1 class="text-black text-sm mt-3">Point of Sale(POS) is a computer application that use for offline inventory and billing system.</h1>
+                                <h1 class="text-black font-medium mt-3 tracking-wide">Functions</h1>
+                                <ul class="list-disc text-black text-sm space-y-1 ps-5">
+                                    <li>Admin is the only capable of creating user account</li>
+                                    <li>Registered user can login</li>
+                                    <li>Inventory Management</li>
+                                    <li>Customer Management</li>
+                                    <li>Payment Processing</li>
+                                    <li>Recorded purchased items</li>
+                                </ul>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./js/project.js" defer></script>
+    <script src="./js/aside.js"></script>
+</body>
+</html>

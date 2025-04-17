@@ -1,0 +1,94 @@
+/*
+.about-me{
+    opacity: 1;
+    animation: about 2s forwards;
+}
+
+@keyframes about {
+    from{ opacity: 1; }
+    75%{ opacity: 1; }
+    to{ opacity: 0; }
+}
+
+.grid-container{
+    background-color: white;
+    animation: gridContainer 2s forwards;
+}
+
+@keyframes gridContainer {
+    from{ background-color: white;}
+    75%{ background-color: white;}
+    to{  background-color: transparent; }
+}
+*/
+.card:hover{
+    animation: cardRotate 1.5s;
+}
+
+@keyframes cardRotate{
+    0%{ rotate: 0deg; }
+    20%{ rotate: 3deg; }
+    40%{ rotate: -3deg; }
+    60%{ rotate: 3deg; }
+    80%{ rotate: -3deg; }
+    100%{ rotate: 0deg; }
+}
+
+
+
+.flip-box {
+    background-color: transparent;
+    perspective: 1000px;
+  }
+  
+.flip-box-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* 
+.flip-box .flip-box-inner {
+    transform: rotateY(0);
+    animation: flipToRight 1.5s forwards;
+}
+*/
+
+.flip-to-right{
+    transform: rotateY(0);
+    animation: flipToRight 1.5s forwards;
+}
+
+@keyframes flipToRight{
+    from{ transform: rotateY(0); }
+    to{ transform: rotateY(180deg); }
+}
+
+.flip-to-left{
+    transform: rotateY(180deg);
+    animation: flipToLeft 1.5s forwards;
+}
+
+@keyframes flipToLeft{
+    from{ transform: rotateY(180deg); }
+    to{ transform: rotateY(0); }
+}
+  
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+  
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+.click-to-flip {
+    display: none;
+}
+
+.flip-box-front:hover  .click-to-flip {
+    display: block;
+}
