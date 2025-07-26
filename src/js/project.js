@@ -1,15 +1,36 @@
-function fullWithToRight(n)
-{
-    let projectContainer = document.getElementsByClassName("project-container");
+let projectContainer = document.getElementsByClassName("project-container");
 
-    projectContainer[n].classList.toggle('sm:-translate-x-full')
-    projectContainer[n].classList.toggle('shadow')
-}
+window.addEventListener('scroll', reveal);
 
-function fullWithToLeft(n)
-{
-    let projectContainer = document.getElementsByClassName("project-container");
+function reveal(){
+    let reveals = document.querySelectorAll('.reveal');
 
-    projectContainer[n].classList.toggle('sm:translate-x-full')
-    projectContainer[n].classList.toggle('shadow')
+    let test = document.getElementById("test");
+    
+
+    for(let i =0; i < reveals.length; i++){
+        let windowheight = window.innerHeight;
+        let revealtop =reveals[i].getBoundingClientRect().top;
+        let revealpoint = 150;
+
+        
+        if(projectContainer[i].classList.contains('sm:-translate-x-full'))
+        {  
+            if(revealtop < windowheight - revealpoint)
+            {
+                reveals[i].classList.toggle('sm:-translate-x-full');
+                projectContainer[i].classList.toggle('shadow');
+            }
+        }
+        
+        if(projectContainer[i].classList.contains('sm:translate-x-full'))
+        {  
+            if(revealtop < windowheight - revealpoint)
+            {
+                reveals[i].classList.toggle('sm:translate-x-full');
+                projectContainer[i].classList.toggle('shadow');
+            }
+        }
+        
+    }
 }
